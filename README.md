@@ -1,4 +1,4 @@
-# Quizzila
+# Quizilla
 
 ## Methodology 
 - Retro at 9:15
