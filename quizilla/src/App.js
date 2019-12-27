@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom';
 import './App.css';
 import LandingPage from './containers/LandingPage/LandingPage';
-import Quiz from './components/Quiz/Quiz';
+import Quiz from './containers/Quiz/Quiz';
 
 class App extends React.Component {
   state = {

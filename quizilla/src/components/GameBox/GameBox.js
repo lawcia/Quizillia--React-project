@@ -21,7 +21,8 @@ const GameBox = (props) => {
             {answers.map(answer => {
                 const htmlToReactParser2 = new Parser();
                 return <div className = "buttonContainer"> 
-                            <button className = "answerButton" 
+                            <button
+                                className = "answerButton" 
                                 value = {answer} 
                                 id = {answer} 
                                 onClick={(event)=> onClickHandler(event)}>{htmlToReactParser2.parse(answer)}
