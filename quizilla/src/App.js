@@ -53,7 +53,8 @@ class App extends React.Component {
     return (
       <Router>   
       <div className="App">
-        <Link to="/" className="homeButton"><h2>Quizilla</h2></Link>
+        <Link to="/" className="homeButton">Quizilla</Link>
+        < hr />
         <Switch>
           <Route path='/quiz' > 
             {this.quizRoute()}
