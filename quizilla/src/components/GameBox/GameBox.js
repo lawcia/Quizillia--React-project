@@ -1,12 +1,11 @@
-import React from 'react'
-import {Parser} from 'html-to-react';  
+import React from 'react';
+import parse from 'html-react-parser';
 import './GameBox.css';
 
 const GameBox = (props) => {
     const formatQuestion = () => {
         let question = props.gameInfo.question
-        const htmlToReactParser = new Parser();
-        const reactElement = htmlToReactParser.parse(question)
+        const reactElement = parse(question)
         return reactElement
     }
 
@@ -19,13 +18,13 @@ const GameBox = (props) => {
         <div className = "questionContainer">
             <h3>{formatQuestion()}</h3>
             {answers.map(answer => {
-                const htmlToReactParser2 = new Parser();
                 return <div className = "buttonContainer"> 
                             <button
                                 className = "answerButton" 
                                 value = {answer} 
                                 id = {answer} 
-                                onClick={(event)=> onClickHandler(event)}>{htmlToReactParser2.parse(answer)}
+                                onClick={(event)=> onClickHandler(event)}>
+                                    {parse(answer)}
                             </button>
                         </div>
             })}

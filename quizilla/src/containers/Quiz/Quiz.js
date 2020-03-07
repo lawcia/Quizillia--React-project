@@ -5,16 +5,13 @@ import Results from '../../containers/Results/Results';
 import './Quiz.css'
 
 class Quiz extends React.Component{
-    constructor(props) {
-        super(props);
-        this.state= {
+        state= {
             data: [],
             index: 0,
             score: [],
             numberOfPlayers: Number(this.props.players),
             counter: 0
         }
-    }
 
     componentDidMount = () => {
         this.createScoreArray()
