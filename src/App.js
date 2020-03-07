@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom';
 import './App.css';
 import LandingPage from './containers/LandingPage/LandingPage';
-import Quiz from './components/Quiz/Quiz';
+import Quiz from './containers/Quiz/Quiz';
 
 class App extends React.Component {
   state = {
@@ -53,7 +53,8 @@ class App extends React.Component {
     return (
       <Router>   
       <div className="App">
-        <Link to="/" className="homeButton"><h2>Quizilla</h2></Link>
+        <Link to="/" className="homeButton">Quizilla</Link>
+        < hr />
         <Switch>
           <Route path='/quiz' > 
             {this.quizRoute()}

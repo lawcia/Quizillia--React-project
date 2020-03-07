@@ -1,0 +1,19 @@
+a {
+  text-decoration: none;
+  color: black
+}
+
+a.homeButton {
+  font-family: 'Lakki Reddy', cursive;
+  font-size: 32px;
+  padding-left: 6px;
+}
+
+a.homeButton:hover {
+  color: #63B766;
+  text-shadow: 0px 0px 5px #EEE82C;
+}
+
+.App {
+  height: 100%;
+}

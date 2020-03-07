@@ -64,7 +64,6 @@ class LandingPage extends React.Component{
                             return(<MenuItem value={category.id} className='categoryItem'>{category.name}</MenuItem>)
                         })}
                     </Select>
-
                     <Select
                         labelId="demo-simple-select-placeholder-label-label"
                         id="difficultyDropdown"
@@ -78,7 +77,6 @@ class LandingPage extends React.Component{
                             <MenuItem value="medium">Medium</MenuItem>
                             <MenuItem value="hard">Hard</MenuItem>
                     </Select>
-
                     <Select
                         labelId="demo-simple-select-placeholder-label-label"
                         id="playerDropdown"
@@ -92,7 +90,7 @@ class LandingPage extends React.Component{
                             <MenuItem value="2">2</MenuItem>
                     </Select>
                 </div>
-                <Link to="/quiz" className="quizButton" onClick={this.onClickHandler}> <h2>Start Quiz!</h2> </Link>
+                <Link to="/quiz" className="quizButton"> <h2>Start Quiz!</h2> </Link>
             </div>
         )
     }

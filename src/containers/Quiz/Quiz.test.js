@@ -4,7 +4,7 @@ import {
     mount
 } from 'enzyme';
 import Quiz from './Quiz'
-import GameBox from '../GameBox/GameBox'
+import GameBox from '../../components/GameBox/GameBox';
 import axios from 'axios'
 import renderer from 'react-test-renderer'
 
